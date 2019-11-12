@@ -2,17 +2,10 @@ import java.util.Scanner;
 
 public class Student extends Person {
     private String year = "Freshmen";
-    public Student (){
-        Scanner inputString = new Scanner(System.in);
-
-        //set super variables
-        System.out.print("Student Name:\t");
-        super.setName(inputString.nextLine());
-        System.out.print("Address:\t");
-        super.setAddress(inputString.nextLine());
-        System.out.print("Phone:\t\t");
-        super.setPhoneNumber(inputString.nextLine());
-
+    public Student (String name, String address, String phone){
+        super.setName(name);
+        super.setAddress(address);
+        super.setPhoneNumber(phone);
         //set year
         setYear();
     }
