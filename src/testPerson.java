@@ -8,5 +8,8 @@ public class testPerson {
         Student two = new Student();
         System.out.println(two);
 
+        Employee three = new Employee("Pete", "4 Sesame St", "789-456-1234", 150000.00);
+        System.out.println(three);
+
     }
 }
