@@ -4,5 +4,9 @@ public class testPerson {
         System.out.println(one);
         one.setName("John Smith");
         System.out.println(one);
+
+        Student two = new Student();
+        System.out.println(two);
+
     }
 }
