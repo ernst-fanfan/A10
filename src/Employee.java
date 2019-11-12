@@ -27,6 +27,10 @@ public class Employee extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public void setDateHired() {
+        this.dateHired = new Date();
+    }
     //to string
 
     @Override
