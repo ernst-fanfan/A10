@@ -33,6 +33,6 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return super.toString()+"\nYear:\t \t"+year;
+        return "\nStudent Object:\n\tName:\t \t"+getName()+"\n\tAddress:\t"+getAddress()+"\n\tPhone:\t \t"+getPhoneNumber()+"\n\tStatus:\t \t"+year;
     }
 }

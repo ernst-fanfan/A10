@@ -29,6 +29,6 @@ public class Visitor extends Person {
     //to string
     @Override
     public String toString() {
-        return super.toString()+"\nPurpose:\t"+visitPurpose+"\nDate:\t \t"+visitDate;
+        return "\nVisitor Object:\n\tName:\t \t"+getName()+"\n\tAddress:\t"+getAddress()+"\n\tPhone:\t \t"+getPhoneNumber()+"\n\tPurpose:\t"+visitPurpose+"\n\tDate:\t \t"+visitDate;
     }
 }

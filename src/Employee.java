@@ -35,7 +35,7 @@ public class Employee extends Person{
 
     @Override
     public String toString() {
-        DecimalFormat dollar = new DecimalFormat("$###,##0.00");
-        return super.toString()+"\nSalary:\t"+dollar.format(salary)+"\nDate Hired:\t"+dateHired;
+        DecimalFormat dollar = new DecimalFormat("$###,##0");
+        return "\nEmployee Object:\n\tName:\t \t"+getName()+"\n\tAddress:\t"+getAddress()+"\n\tPhone:\t \t"+getPhoneNumber()+"\n\tSalary:\t \t"+dollar.format(salary)+"\n\tDate Hired:\t"+dateHired;
     }
 }

@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Staff extends Employee {
     //states
     private String title = "";
@@ -21,6 +23,7 @@ public class Staff extends Employee {
     //to string
     @Override
     public String toString() {
-        return super.toString()+"Title:\t \t"+title;
+        DecimalFormat dollar = new DecimalFormat("$###,##0");
+        return "\nStaff Object:\n\tName:\t \t"+getName()+"\n\tAddress:\t"+getAddress()+"\n\tPhone:\t \t"+getPhoneNumber()+"\n\tSalary:\t \t"+dollar.format(getSalary())+"\n\tDate Hired:\t"+getDateHired()+"\n\tTitle:\t \t"+title;
     }
 }

@@ -1,12 +1,13 @@
 import java.util.Date;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Faculty extends Employee {
     //states
     String officeNumber;
     String rank;
     //constructor
-    public Faculty(String name, String address, String phone, double salary, String office, String rank){
+    public Faculty(String name, String address, String phone, double salary, String office){
         super.setName(name);
         super.setAddress(address);
         super.setPhoneNumber(phone);
@@ -32,7 +33,7 @@ public class Faculty extends Employee {
         Scanner inputString = new Scanner(System.in);//scanner
         //data validation
         while(exit != 1) {
-            System.out.print("What year is the Student?\n\tFreshmen\n\tSophomore\n\tJunior\n\tSenior\n\t \t::");//prompt
+            System.out.print("What rank is the faculty?\n\tAssistant Professor\n\tAssociate Professor\n\tFull Professor\n\t \t::");//prompt
             rank = inputString.nextLine();//scan
             if (rank.compareTo("Assistant Professor") != 0 && rank.compareTo("Associate Professor") != 0 && rank.compareTo("Full Professor") != 0) {//data check
                 System.out.println("Invalid entree");//not good
@@ -45,6 +46,7 @@ public class Faculty extends Employee {
     //to string
     @Override
     public String toString() {
-        return super.toString()+"\nOffice:\t"+officeNumber+"\nRank:\t \t"+rank;
+        DecimalFormat dollar = new DecimalFormat("$###,##0");
+        return "\nFaculty Object:\n\tName:\t \t"+getName()+"\n\tAddress:\t"+getAddress()+"\n\tPhone:\t \t"+getPhoneNumber()+"\n\tSalary:\t \t"+dollar.format(getSalary())+"\n\tDate Hired:\t"+getDateHired()+"\n\tOffice:\t \t"+officeNumber+"\n\tRank:\t \t"+rank;
     }
 }

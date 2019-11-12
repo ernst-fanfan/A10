@@ -41,6 +41,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return ("Name:\t \t"+name+"\nAddress:\t"+address+"\nPhone:\t \t"+phoneNumber);
+        return ("\nPerson Object:\n\tName:\t \t"+name+"\n\tAddress:\t"+address+"\n\tPhone:\t \t"+phoneNumber);
     }
 }
