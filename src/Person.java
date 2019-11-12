@@ -1,3 +1,10 @@
+//Class: CS 5000
+//Term: Fall 2019
+//Name: Ernst Fanfan
+//Instructor: Dr. Haddad
+//Assignment: 10
+//IDE Name: IntelliJ
+
 public class Person {
     private String name;
     private String address;

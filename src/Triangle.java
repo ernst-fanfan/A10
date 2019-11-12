@@ -1,3 +1,10 @@
+//Class: CS 5000
+//Term: Fall 2019
+//Name: Ernst Fanfan
+//Instructor: Dr. Haddad
+//Assignment: 10
+//IDE Name: IntelliJ
+
 public class Triangle extends GeometricObject{
     private double side1 = 1.00;
     private double side2 = 1.00;
